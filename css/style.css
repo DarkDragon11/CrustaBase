@@ -1,0 +1,1090 @@
+/* ==========================================
+   CRUSTABASE - STYLE MODERNE
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Segoe UI",Arial,sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    background:#071f35;
+    color:white;
+    min-height:100vh;
+
+}
+
+/* ================= HEADER ================= */
+
+header{
+
+    background:#082743;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px 60px;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.35);
+
+}
+
+header h1{
+
+    font-size:2.3rem;
+    font-weight:700;
+
+}
+
+header h1 span{
+
+    color:#27b6ff;
+
+}
+
+header p{
+
+    display:none;
+
+}
+
+nav{
+
+    display:flex;
+    gap:20px;
+
+}
+
+nav a{
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:12px 20px;
+
+    border-radius:8px;
+
+    transition:.25s;
+
+    font-size:17px;
+
+}
+
+nav a:hover{
+
+    background:#0d3d66;
+
+    color:#2fc5ff;
+
+}
+
+/* ================= CONTENU ================= */
+
+main{
+
+    width:90%;
+
+    max-width:1400px;
+
+    margin:40px auto;
+
+}
+
+/* ================= CARTES ================= */
+
+section{
+
+    background:#0c2744;
+
+    border-radius:18px;
+
+    padding:30px;
+
+    margin-bottom:30px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+
+}
+
+section h2{
+
+    margin-bottom:25px;
+
+    font-size:2rem;
+
+}
+
+/* ================= RECHERCHE ================= */
+
+#recherche{
+
+    width:350px;
+
+    float:left;
+
+}
+
+#liste{
+
+    margin-left:390px;
+
+}
+
+input{
+
+    width:100%;
+
+    padding:15px;
+
+    margin-bottom:18px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:white;
+
+    font-size:16px;
+
+}
+
+input:focus{
+
+    outline:2px solid #2fc5ff;
+
+}
+
+button{
+
+    width:100%;
+
+    padding:16px;
+
+    background:#128fd6;
+
+    color:white;
+
+    border:none;
+
+    border-radius:10px;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+button:hover{
+
+    background:#25a8f1;
+
+}
+
+/* ================= TABLEAU ================= */
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    overflow:hidden;
+
+    border-radius:10px;
+
+}
+
+thead{
+
+    background:#0e8fd8;
+
+}
+
+th{
+
+    padding:18px;
+
+    text-align:left;
+
+    font-size:18px;
+
+}
+
+td{
+
+    padding:18px;
+
+    background:#10314f;
+
+}
+
+tbody tr{
+
+    transition:.2s;
+
+}
+
+tbody tr:hover{
+
+    background:#1a4469;
+
+}
+
+tbody tr:hover td{
+
+    background:#1a4469;
+
+}
+
+table a{
+
+    color:#34bfff;
+
+    text-decoration:none;
+
+}
+
+table a:hover{
+
+    text-decoration:underline;
+
+}
+
+/* ================= FICHES ================= */
+
+.card{
+
+    background:#0c2744;
+
+    border-radius:18px;
+
+    padding:35px;
+
+    margin-bottom:30px;
+
+}
+
+.hero{
+
+    display:flex;
+
+    gap:40px;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+
+}
+
+.hero img{
+
+    width:340px;
+
+    border-radius:15px;
+
+    box-shadow:0 15px 30px rgba(0,0,0,.4);
+
+}
+
+.hero-text{
+
+    flex:1;
+
+}
+
+.hero-text h2{
+
+    font-size:2.8rem;
+
+}
+
+.hero-text h3{
+
+    color:#6bd6ff;
+
+    margin:15px 0;
+
+    font-style:italic;
+
+}
+
+.hero-text p{
+
+    line-height:1.8;
+
+}
+
+.card table{
+
+    margin-top:20px;
+
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+
+    clear:both;
+
+    text-align:center;
+
+    padding:30px;
+
+    margin-top:50px;
+
+    background:#082743;
+
+    color:#b7d8f0;
+
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:1000px){
+
+header{
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+nav{
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+}
+
+#recherche{
+
+    width:100%;
+
+    float:none;
+
+}
+
+#liste{
+
+    margin-left:0;
+
+    margin-top:30px;
+
+}
+
+.hero{
+
+    flex-direction:column;
+
+}
+
+.hero img{
+
+    width:100%;
+
+}
+
+table{
+
+    display:block;
+
+    overflow-x:auto;
+
+}
+
+}
+/* ================= GALERIE ================= */
+
+.gallery{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:30px;
+
+    margin-top:25px;
+
+    width:100%;
+
+}
+
+.gallery-item{
+
+    width:100%;
+
+    background:#10314f;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    transition:.3s;
+
+    box-shadow:0 10px 20px rgba(0,0,0,.3);
+
+}
+
+.gallery-item:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 18px 35px rgba(0,0,0,.45);
+
+}
+
+.gallery-item img{
+
+    width:100%;
+
+    height:260px;
+
+    object-fit:cover;
+
+    display:block;
+
+}
+
+.gallery-item h3{
+
+    padding:20px 20px 10px;
+
+    color:#4ec8ff;
+
+}
+
+.gallery-item p{
+
+    padding:0 20px 20px;
+
+    line-height:1.7;
+
+}
+/* ================= ESPÈCE INVASIVE ================= */
+
+.danger-banner{
+
+    background:linear-gradient(90deg,#7a0000,#d00000,#7a0000);
+
+    color:white;
+
+    text-align:center;
+
+    padding:20px;
+
+    font-size:2rem;
+
+    font-weight:bold;
+
+    border-radius:18px;
+
+    margin-bottom:30px;
+
+    letter-spacing:2px;
+
+    animation:danger 2s infinite;
+
+    box-shadow:0 0 25px rgba(255,0,0,.45);
+
+}
+
+@keyframes danger{
+
+0%{
+
+transform:scale(1);
+
+}
+
+50%{
+
+transform:scale(1.02);
+
+box-shadow:0 0 40px rgba(255,0,0,.8);
+
+}
+
+100%{
+
+transform:scale(1);
+
+}
+
+}
+.gallery-large{
+
+    grid-column:1/-1;
+
+}
+
+.gallery-large img{
+
+    height:420px;
+
+}
+/* ======== Galerie spéciale Homard ======== */
+
+.gallery-vertical{
+
+    display:grid;
+
+    grid-template-columns: 2fr 1.2fr;
+
+    gap:30px;
+
+    width:100%;
+
+    align-items:stretch;
+
+}
+
+.gallery-left{
+
+    display:grid;
+
+    grid-template-rows:1fr 1fr;
+
+    gap:30px;
+
+}
+
+.gallery-right{
+
+    display:flex;
+
+}
+
+.gallery-left .gallery-item,
+.gallery-right .gallery-item{
+
+    width:100%;
+    height:100%;
+
+}
+
+.gallery-item img{
+
+    width:100%;
+    height:260px;
+
+    object-fit:cover;
+
+}
+
+.gallery-right .gallery-item img{
+
+    height:570px;
+
+}
+
+.gallery-item{
+
+    display:flex;
+    flex-direction:column;
+
+}
+/* ======== Barre de recherche ======== */
+
+.search-box{
+
+    position:relative;
+
+}
+
+#suggestions{
+
+    position:absolute;
+
+    width:100%;
+
+    background:#10314f;
+
+    border-radius:0 0 12px 12px;
+
+    overflow:hidden;
+
+    z-index:100;
+
+    display:none;
+
+}
+
+.suggestion{
+
+    padding:15px;
+
+    cursor:pointer;
+
+    transition:.2s;
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+}
+
+.suggestion:hover{
+
+    background:#1c4c74;
+
+}
+/* ================= BADGES V2 ================= */
+
+.badges{
+
+    display:flex;
+    flex-wrap:wrap;
+    gap:14px;
+    margin:25px 0;
+
+}
+
+.badge{
+
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+    padding:12px 18px;
+
+    border-radius:999px;
+
+    color:white;
+
+    font-weight:600;
+
+    letter-spacing:.3px;
+
+    transition:.25s;
+
+    box-shadow:0 8px 18px rgba(0,0,0,.25);
+
+}
+
+.badge:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:0 12px 24px rgba(0,0,0,.35);
+
+}
+
+.badge svg{
+
+    width:20px;
+    height:20px;
+    fill:white;
+
+}
+
+/* Couleurs */
+
+.marin{
+
+    background:#0A5C99;
+
+}
+
+.eaudouce{
+
+    background:#38A169;
+
+}
+.badge img{
+
+    width:20px;
+    height:20px;
+    filter:brightness(0) invert(1);
+
+}
+
+/* inutilisés*/
+
+
+.indigene{
+
+    background:#2F855A;
+
+}
+
+.decapode{
+
+    background:#DD6B20;
+
+}
+
+.protegee{
+
+    background:#6B46C1;
+
+}
+
+.nocturne{
+
+    background:#2D3748;
+
+}
+
+.diurne{
+
+    background:#D69E2E;
+
+}
+/* ===== Difficulté d'observation ===== */
+
+.facile{
+    background:#28a745;
+}
+
+.commune{
+    background:#f1c40f;   /* 🟡 Jaune */
+   
+}
+
+.peu-commune{
+    background:#ff9800;
+}
+
+.rare{
+    background:#e53935;
+}
+
+.exceptionnelle{
+    background:#6c3483;   /* 🟣 Violet */
+}
+/* ============================= */
+/*      Arbre phylogénétique     */
+/* ============================= */
+
+.phylo-card{
+
+    margin-top:30px;
+
+}
+
+.phylo-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    cursor:pointer;
+
+}
+
+.phylo-header p{
+
+    margin-top:8px;
+
+    color:#666;
+
+}
+
+#flechePhylo{
+
+    font-size:28px;
+
+    transition:.35s;
+
+}
+
+#phylo{
+
+    overflow:hidden;
+
+    transition:.4s;
+
+    margin-top:20px;
+
+}
+
+.hidden{
+
+    display:none;
+
+}
+
+.phylo-tree{
+
+    list-style:none;
+
+    padding-left:10px;
+
+    line-height:2;
+
+}
+
+.phylo-tree ul{
+
+    list-style:none;
+
+    margin-left:25px;
+
+    padding-left:20px;
+
+    border-left:2px solid #7fb5d8;
+
+}
+
+.phylo-tree a{
+
+    color:#1565c0;
+
+    text-decoration:none;
+
+    transition:.2s;
+
+}
+
+.phylo-tree a:hover{
+
+    color:#0d6efd;
+
+    margin-left:6px;
+
+}
+top:18px;
+
+width:15px;
+
+border-top:2px solid #8ab4d6;
+
+}
+
+.phylo a{
+
+color:#1565c0;
+
+text-decoration:none;
+
+font-weight:600;
+
+}
+
+.phylo a:hover{
+
+text-decoration:underline;
+
+}
+.hidden{
+
+display:none;
+
+}
+.phylo-card {
+    padding: 20px;
+}
+
+.phylo-card .section-header {
+    margin: 0;
+}
+
+.phylo-card #phylo.hidden {
+    display: none;
+}
+/* ============================= */
+/* Badge Espèce invasive */
+/* ============================= */
+
+.invasive{
+
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+
+    padding:8px 16px;
+
+    border-radius:999px;
+
+    background:linear-gradient(135deg,#d32f2f,#b71c1c);
+
+    color:white;
+
+    font-weight:bold;
+
+    box-shadow:0 4px 12px rgba(183,28,28,.35);
+
+}
+
+.invasive img{
+
+    width:22px;
+    height:22px;
+
+}
+/* ============================= */
+/* Légende des badges            */
+/* ============================= */
+
+.legend-card{
+
+    margin-top:25px;
+
+}
+
+.legend-header{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    cursor:pointer;
+
+}
+
+.legend-header p{
+
+    color:#666;
+    margin-top:5px;
+
+}
+
+#flecheLegende{
+
+    font-size:26px;
+
+    transition:.3s;
+
+}
+
+
+
+.legend-item span:last-child{
+
+    color:#555;
+    font-size:15px;.legend-item{
+
+    display:block;
+
+    margin:12px 0;
+
+}
+
+.legend-item .badge{
+
+    display:inline-flex;
+
+}
+
+}
+
+#legende hr{
+
+    border:none;
+
+    border-top:1px solid #ddd;
+
+    margin:18px 0;
+
+}
+/*======================================
+            Accueil
+======================================*/
+
+.home-layout{
+
+    display:grid;
+
+    grid-template-columns:280px 1fr;
+
+    gap:25px;
+
+    align-items:start;
+
+    margin-top:25px;
+
+}
+
+.sidebar{
+
+    position:sticky;
+
+    top:20px;
+
+}
+
+.content{
+
+    width:100%;
+
+}
+@media(max-width:900px){
+
+.home-layout{
+
+    grid-template-columns:1fr;
+
+}
+
+.sidebar{
+
+    position:static;
+
+}
+
+}
+/* ============================
+   Liste des espèces déroulante
+============================ */
+
+.section-header {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    cursor: pointer;
+
+}
+
+.section-header p {
+
+    margin-top: 5px;
+    color: #666;
+
+}
+
+#flecheEspeces {
+
+    font-size: 24px;
+
+    transition: transform 0.3s ease;
+
+}
+
+#listeEspecesContainer {
+
+    margin-top: 20px;
+
+}
+#liste {
+    padding-bottom: 80px;
+}
+.index-page {
+    background-image:
+        linear-gradient(
+            rgba(5, 30, 50, 0.65),
+            rgba(5, 30, 50, 0.75)
+        ),
+        url("../images/mer.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
