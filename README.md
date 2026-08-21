@@ -2,7 +2,7 @@
 
 **CrustaBase** est une base de données interactive et moderne consacrée à l'inventaire, à la consultation et à l'identification des crustacés marins et d'eau douce.
 
-👉 **[Consulter le site en ligne](https://darkdragon11.github.io/CrustaBase/index.htmlhttps://github.io)**
+👉 **[Consulter le site en ligne](https://darkdragon11.github.io/CrustaBase/index.html)**
 
 ---
 
