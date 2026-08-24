@@ -126,6 +126,13 @@ const especes = [
     habitat: "Fonds rocheux et herbiers",
     page: "macropode-rostre.html"
 },
+{
+    nom: "Pagure commun",
+    scientifique: "Pagurus bernhardus",
+    famille: "Paguridae",
+    habitat: "Fonds rocheux, sableux et vaseux",
+    page: "pagure-commun.html"
+},
 ];
 
 /* ============================
