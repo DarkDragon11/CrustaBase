@@ -106,11 +106,11 @@ const especes = [
 },
 
 {
-    nom: "Crabe vert",
+    nom: "Crabe vert Atlantique",
     scientifique: "Carcinus maenas",
     famille: "Carcinidae",
     habitat: "Estran rocheux, sableux et vaseux",
-    page: "crabe-vert.html"
+    page: "crabe-vert-A.html"
 },
 
 {
@@ -133,6 +133,14 @@ const especes = [
     habitat: "Fonds rocheux, sableux et vaseux",
     page: "pagure-commun.html"
 },
+{ 
+	nom: "Crabe vert de Méditerranée",
+	scientifique: "Carcinus aestuarii",
+	famille: "Carcinidae",
+	habitat: "Lagunes litorals et fonds vaseux",
+	page: "crabe-vert-M.html"
+}
+
 ];
 
 /* ============================
@@ -359,4 +367,10 @@ if (ouvrirEspeces) {
 
     });
 
+}
+/*compteur*/
+const compteur = document.getElementById("nombreEspeces");
+
+if (compteur) {
+    compteur.textContent = especes.length;
 }
